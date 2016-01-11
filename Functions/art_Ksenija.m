@@ -11,9 +11,9 @@ function [X,Xbis,rho,eta] = art_Ksenija(A,b,k)
 % in Image Reconstruction, SIAM, Philadelphia, 2001; Sect. 5.3.1.
 
 % Per Christian Hansen, IMM, Dec. 6, 2006.
-
-% Ksenija 14.11.2013 negative Werte nach jeder Iteration = 0
 % Initialization.
+
+% modified by K. Gräfe 14.11.2013
 
 if (k < 1), error('Number of steps k must be positive'), end
 [m,n] = size(A); X = zeros(n,k);
