@@ -1,4 +1,5 @@
 function [S,u,c] = Reko(SM_particle,SM_empty_1,particle2,particle3,e,p)
+
 %% SNR -> sort auf the frequency components
 [gutfreqX_alle,gutfreqY_alle] = SNR(SM_particle,SM_empty_1(:,:,:,1:(size(SM_particle,4))),3.65,3.65,120);
 gutfreqX=gutfreqX_alle(~(gutfreqX_alle>635));
