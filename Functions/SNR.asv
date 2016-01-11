@@ -1,4 +1,4 @@
-function [spaltex,spaltey,w,standartabweichung,SNR] = SNR(SM_particle,SM_empty_1,minSNRx,minSNRy,p)
+function [spaltex,spaltey,w,standartabweichung,SNR] = SNR_Energie_Standardabweichung(SM_particle,SM_empty_1,minSNRx,minSNRy,p)
 
 SystemMatrix_P = ((SM_particle(1:2:end,:,:,:) + 1i*SM_particle(2:2:end,:,:,:)));
 SystemMatrix_E1 = ((SM_empty_1(1:2:end,:,:,:) + 1i*SM_empty_1(2:2:end,:,:,:)));
