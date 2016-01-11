@@ -1,4 +1,5 @@
 function [x_lambda,rho,eta] = tikhonov(U,s,V,b,lambda,x_0)
+% from C. Hansen
 %TIKHONOV Tikhonov regularization.
 %
 % [x_lambda,rho,eta] = tikhonov(U,s,V,b,lambda,x_0)
