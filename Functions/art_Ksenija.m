@@ -14,6 +14,7 @@ function [X,Xbis,rho,eta] = art_Ksenija(A,b,k)
 
 % Ksenija 14.11.2013 negative Werte nach jeder Iteration = 0
 % Initialization.
+
 if (k < 1), error('Number of steps k must be positive'), end
 [m,n] = size(A); X = zeros(n,k);
 if (nargout > 1)
