@@ -39,13 +39,14 @@ for j=1:k
    X(:,j) = x;
    
    %modified by K. Gräfe
-   for k=1:size(X,1)
-       if x(k)<0
-           x(k)=0;
+   for p=1:size(X,1)
+       if x(p)<0
+           x(p)=0;
        end
        REx=real(x);
-       IMx=imag(x);
+       %IMx=imag(x);
        x = REx;
    end
+   X(:,j) = x;
    Xbis(:,j) = x;
 end
